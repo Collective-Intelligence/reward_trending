@@ -31,7 +31,7 @@ class Main():
         self.TCP_PORT = 11000
         thread = threading.Thread(target=self.update_rewards)
         thread.daemon = True
-        #thread.start()
+        thread.start()
 
         thread2 = threading.Thread(target=self.account_loop)
         thread2.daemon = True
